@@ -47,16 +47,18 @@ param solutionUniqueText string = substring(uniqueString(subscription().id, reso
 param deploymentType string = 'GlobalStandard'
 
 @minLength(1)
-@allowed(['gpt-4.1-mini'])
-@description('Optional. Name of the GPT model to deploy.')
-param gptModelName string = 'gpt-4.1-mini'
+@description('Optional. Name of the GPT model to deploy:')
+@allowed([
+  'gpt-5-mini'
+])
+param gptModelName string = 'gpt-5-mini'
 
 @description('Optional. Version of the GPT model to deploy.')
-param gptModelVersion string = '2025-04-14'
+param gptModelVersion string = '2025-08-07'
 
 @minValue(10)
 @description('Optional. Capacity of the GPT model deployment.')
-param gptDeploymentCapacity int = 100
+param gptDeploymentCapacity int = 150
 
 @minLength(1)
 @allowed(['text-embedding-3-large'])
@@ -74,7 +76,7 @@ param embeddingDeploymentCapacity int = 100
   azd: {
     type: 'location'
     usageName: [
-      'OpenAI.GlobalStandard.gpt4.1-mini,150'
+      'OpenAI.GlobalStandard.gpt-5-mini,150'
       'OpenAI.GlobalStandard.text-embedding-3-large,100'
     ]
   }

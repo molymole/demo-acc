@@ -60,25 +60,25 @@
     },
     "gptModelName": {
       "type": "string",
-      "defaultValue": "gpt-4.1-mini",
+      "defaultValue": "gpt-5-mini",
       "allowedValues": [
-        "gpt-4.1-mini"
+        "gpt-5-mini"
       ],
       "minLength": 1,
       "metadata": {
-        "description": "Optional. Name of the GPT model to deploy."
+        "description": "Optional. Name of the GPT model to deploy:"
       }
     },
     "gptModelVersion": {
       "type": "string",
-      "defaultValue": "2025-04-14",
+      "defaultValue": "2025-08-07",
       "metadata": {
         "description": "Optional. Version of the GPT model to deploy."
       }
     },
     "gptDeploymentCapacity": {
       "type": "int",
-      "defaultValue": 100,
+      "defaultValue": 150,
       "minValue": 10,
       "metadata": {
         "description": "Optional. Capacity of the GPT model deployment."
@@ -116,7 +116,7 @@
         "azd": {
           "type": "location",
           "usageName": [
-            "OpenAI.GlobalStandard.gpt4.1-mini,150",
+            "OpenAI.GlobalStandard.gpt-5-mini,150",
             "OpenAI.GlobalStandard.text-embedding-3-large,100"
           ]
         },
@@ -380,7 +380,7 @@
                 "azd": {
                   "type": "location",
                   "usageName": [
-                    "OpenAI.GlobalStandard.gpt4.1-mini,150",
+                    "OpenAI.GlobalStandard.gpt-5-mini,150",
                     "OpenAI.GlobalStandard.text-embedding-3-large,100"
                   ]
                 },
@@ -400,9 +400,9 @@
             },
             "gptModelName": {
               "type": "string",
-              "defaultValue": "gpt-4.1-mini",
+              "defaultValue": "gpt-5-mini",
               "allowedValues": [
-                "gpt-4.1-mini"
+                "gpt-5-mini"
               ],
               "metadata": {
                 "description": "Optional. Name of the GPT model to deploy."
@@ -410,14 +410,14 @@
             },
             "gptModelVersion": {
               "type": "string",
-              "defaultValue": "2025-04-14",
+              "defaultValue": "2025-08-07",
               "metadata": {
                 "description": "Optional. Version of the GPT model to deploy."
               }
             },
             "gptDeploymentCapacity": {
               "type": "int",
-              "defaultValue": 100,
+              "defaultValue": 150,
               "minValue": 10,
               "metadata": {
                 "description": "Optional. Capacity of the GPT deployment (TPM in thousands)."
@@ -58512,9 +58512,9 @@
             },
             "gptModelName": {
               "type": "string",
-              "defaultValue": "gpt-4.1-mini",
+              "defaultValue": "gpt-5-mini",
               "allowedValues": [
-                "gpt-4.1-mini"
+                "gpt-5-mini"
               ],
               "minLength": 1,
               "metadata": {
@@ -58523,14 +58523,14 @@
             },
             "gptModelVersion": {
               "type": "string",
-              "defaultValue": "2025-04-14",
+              "defaultValue": "2025-08-07",
               "metadata": {
                 "description": "Optional. Version of the GPT model to deploy."
               }
             },
             "gptDeploymentCapacity": {
               "type": "int",
-              "defaultValue": 100,
+              "defaultValue": 150,
               "minValue": 10,
               "metadata": {
                 "description": "Optional. Capacity of the GPT model deployment."
@@ -58610,7 +58610,7 @@
                 "azd": {
                   "type": "location",
                   "usageName": [
-                    "OpenAI.GlobalStandard.gpt4.1-mini,150",
+                    "OpenAI.GlobalStandard.gpt-5-mini,150",
                     "OpenAI.GlobalStandard.text-embedding-3-large,100"
                   ]
                 },
